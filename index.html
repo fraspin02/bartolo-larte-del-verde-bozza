@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giardiniere ad Avella (AV) · Bartolo e Gennaro – L'Arte del Verde</title>
+<meta name="description" content="Potatura siepi, manutenzione del verde e lavorazione dei terreni agricoli ad Avella (AV). Chiamate o scrivete su WhatsApp al 328 866 1426.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F3F5EC">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="Bartolo e Gennaro – L'Arte del Verde · Avella">
+<meta property="og:description" content="Potatura siepi, manutenzione del verde e lavorazione dei terreni agricoli ad Avella (AV).">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bartolo e Gennaro – L'Arte del Verde","description":"Potatura siepi, manutenzione del verde, lavorazione terreni agricoli","telephone":["+39 328 866 1426","+39 379 242 7910"],"address":{"@type":"PostalAddress","streetAddress":"Via Giacomo Leopardi 14","postalCode":"83021","addressLocality":"Avella","addressRegion":"AV","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":40.9586348,"longitude":14.5968571},"areaServed":"Avella","openingHours":["Mo-Fr 08:00-18:00","Sa 08:00-14:00"]}</script>
+<style>
+@font-face{font-family:"Archivo";src:url(fonts/archivo-latin-var.woff2) format("woff2");font-weight:400 800;font-stretch:100% 125%;font-display:swap}
+:root{
+  --carta:#F3F5EC;--salvia:#DDE6CF;--bianco:#fff;
+  --ink:#1D221F;--muted:#5B6157;
+  --foglia:#689B4D;--foglia-t:#3E6A2B;--logo:#243E35;
+  --arancio:#C2410C;--fieno:#E9C46A;--terra:#6E4A2F;
+  --r:12px;--bordo:2px solid var(--ink);--ombra:4px 4px 0 var(--ink);
+  --wrap:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--carta);color:var(--ink);font:400 17px/1.55 "Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;font-stretch:100%}
+body.nav-aperta{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-stretch:125%;font-weight:800;line-height:1.05;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.05rem,8.4vw,3.9rem);text-transform:uppercase}
+h2{font-size:clamp(1.6rem,5.6vw,2.5rem);text-transform:uppercase}
+h3{font-size:1.2rem;font-stretch:112%}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--arancio);outline-offset:3px;border-radius:4px}
+.occhiello{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--foglia-t)}
+.occhiello::before{content:"";width:22px;height:2px;background:currentColor}
+
+/* bottoni */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 22px;border:var(--bordo);border-radius:10px;box-shadow:var(--ombra);font-weight:700;font-size:1.02rem;text-decoration:none;background:var(--bianco);color:var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn-chiama{background:var(--arancio);color:#fff}
+.btn-wa{background:var(--foglia);color:var(--ink)}
+
+/* testata */
+.testata{position:sticky;top:0;z-index:20;background:var(--carta);border-bottom:var(--bordo)}
+.testata .wrap{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;min-height:68px;gap:8px}
+.burger,.testata-tel{width:48px;height:48px;display:grid;place-items:center;border:0;background:none;color:var(--ink);padding:0;cursor:pointer;border-radius:8px}
+.burger .ico,.testata-tel .ico{width:26px;height:26px}
+.testata-tel{color:var(--arancio)}
+.marca{justify-self:center;display:inline-flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--logo);font-weight:600;font-stretch:100%;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+.marca .r1{display:flex;align-items:flex-end;gap:5px;font-size:1.28rem}
+.marca .r2{font-size:1.28rem}
+.marca svg{width:24px;height:22px;margin-bottom:2px}
+.marca small{font-size:.6rem;letter-spacing:.16em;color:var(--foglia-t);margin-top:4px;font-weight:700}
+.nav{display:none}
+.pannello-nav{position:fixed;inset:0;z-index:30;background:var(--carta);padding:14px 20px 32px;display:flex;flex-direction:column;overflow:auto}
+.pannello-nav[hidden]{display:none}
+.pannello-nav nav{display:flex;flex-direction:column;margin-top:18px}
+.pannello-nav nav a:not(.btn){font-stretch:125%;font-weight:800;font-size:1.7rem;text-transform:uppercase;text-decoration:none;padding:14px 0;border-bottom:2px dashed rgba(29,34,31,.25)}
+.pannello-nav .btn{margin-top:26px}
+.pannello-nav .btn+.btn{margin-top:14px}
+
+/* hero */
+.hero{padding:34px 0 0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:26px}
+.hero h1 span{color:var(--foglia-t)}
+.hero .lead{font-size:1.1rem;max-width:34em;margin-top:16px}
+.azioni{display:grid;gap:14px;margin-top:24px}
+.info{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:.95rem;color:var(--muted)}
+.info span{display:inline-flex;align-items:center;gap:7px}
+.info .ico{width:18px;height:18px;color:var(--foglia-t)}
+.illustrazione{margin:0 -20px;position:relative}
+.illustrazione svg{width:100%;height:auto}
+
+/* bordo a siepe */
+.siepe{position:relative;background:var(--salvia)}
+.siepe::before{content:"";position:absolute;left:0;right:0;top:-15px;height:16px;background:radial-gradient(circle at 14px 16px,var(--salvia) 13.5px,transparent 14.5px) repeat-x;background-size:28px 16px}
+section{padding:60px 0}
+.testa-sez{display:grid;gap:12px;margin-bottom:30px;max-width:40em}
+.testa-sez p{color:var(--muted);font-size:1.05rem}
+
+/* servizi: cartellini */
+.servizi{display:grid;gap:26px;list-style:none;margin:0;padding:0}
+.cartellino{position:relative;background:var(--bianco);border:var(--bordo);border-radius:var(--r) var(--r) var(--r) var(--r);box-shadow:5px 5px 0 var(--ink);padding:38px 22px 22px;display:flex;flex-direction:column;gap:12px}
+.cartellino::before{content:"";position:absolute;top:12px;left:50%;width:14px;height:14px;margin-left:-7px;border:2px solid var(--ink);border-radius:50%;background:var(--salvia)}
+.cartellino .disegno{width:64px;height:64px;border-radius:12px;background:var(--salvia);display:grid;place-items:center;color:var(--foglia-t)}
+.cartellino .disegno svg{width:44px;height:44px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cartellino p{color:var(--muted)}
+.cartellino a{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--foglia-t);text-decoration:none;padding-top:6px}
+.cartellino a .ico{width:20px;height:20px}
+.cartellino a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* come funziona */
+.passi{list-style:none;margin:0;padding:0;display:grid;gap:18px;counter-reset:p}
+.passi li{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;padding:20px 0;border-top:2px dashed rgba(29,34,31,.3)}
+.passi li:first-child{border-top:0}
+.passi li::before{counter-increment:p;content:counter(p);width:56px;height:56px;border:var(--bordo);border-radius:50%;display:grid;place-items:center;font-stretch:125%;font-weight:800;font-size:1.45rem;background:var(--fieno)}
+.passi h3{margin-bottom:6px}
+.passi p{color:var(--muted)}
+
+/* lavori: spazi per le foto */
+.lavori{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.foto-vuota{aspect-ratio:4/5;border:2px dashed rgba(29,34,31,.45);border-radius:var(--r);background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(104,155,77,.09) 14px 28px);display:flex;flex-direction:column;justify-content:flex-end;padding:14px;gap:4px}
+.foto-vuota:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.foto-vuota svg{width:34px;height:34px;color:var(--foglia-t);margin-bottom:auto}
+.foto-vuota b{font-size:.98rem}
+.foto-vuota span{font-size:.85rem;color:var(--muted)}
+.nota-foto{margin-top:18px;font-size:.92rem;color:var(--muted)}
+
+/* zona */
+.zona{display:grid;gap:26px;align-items:center}
+.mappa{border:var(--bordo);border-radius:var(--r);box-shadow:var(--ombra);overflow:hidden;background:#EAF0DF}
+.mappa svg{width:100%;height:auto}
+.zona .indirizzo{font-size:1.15rem;font-weight:600;margin:14px 0 22px}
+
+/* contatti */
+.contatti{background:var(--ink);color:var(--carta)}
+.contatti .occhiello{color:var(--fieno)}
+.contatti .testa-sez p{color:#C9CFC2}
+.scheda{display:grid;gap:22px}
+.blocco{border:2px solid var(--carta);border-radius:var(--r);padding:22px}
+.blocco h3{font-size:1rem;letter-spacing:.1em;text-transform:uppercase;font-stretch:110%;color:var(--fieno);margin-bottom:12px}
+.numero{display:block;font-stretch:125%;font-weight:800;font-size:clamp(1.7rem,7vw,2.3rem);text-decoration:none;line-height:1.1}
+.blocco .azioni{margin-top:18px}
+.contatti .btn{border-color:var(--carta);box-shadow:4px 4px 0 var(--foglia)}
+.contatti .btn-chiama{box-shadow:4px 4px 0 var(--fieno)}
+.secondario{margin-top:16px;color:#C9CFC2}
+.secondario a{color:var(--carta);font-weight:700}
+.orari{width:100%;border-collapse:collapse}
+.orari td{padding:9px 0;border-bottom:1px solid rgba(243,245,236,.2)}
+.orari td:last-child{text-align:right;font-weight:600}
+.orari-nota{margin-top:10px;font-size:.85rem;color:#C9CFC2}
+
+/* piede */
+.piede{background:var(--terra);color:#fff;position:relative;padding:44px 0 30px}
+.piede::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;background:repeating-linear-gradient(90deg,#5A3C25 0 18px,var(--terra) 18px 30px)}
+.piede .wrap{display:grid;gap:18px}
+.piede .marca{color:#fff;justify-self:start}
+.piede .marca small{color:var(--fieno)}
+.piede p{font-size:.95rem;color:#F1E7DE}
+.piede .legale{font-size:.82rem;border-top:1px solid rgba(255,255,255,.25);padding-top:16px}
+mark.dc{background:var(--fieno);color:var(--ink);padding:0 4px;border-radius:3px;white-space:nowrap}
+
+@media (min-width:600px){
+  .azioni{grid-template-columns:auto auto;justify-content:start}
+  .servizi{grid-template-columns:1fr 1fr}
+  .lavori{grid-template-columns:repeat(3,1fr)}
+  .foto-vuota:first-child{grid-column:auto;aspect-ratio:4/5}
+}
+@media (min-width:960px){
+  body{font-size:18px}
+  .testata .wrap{grid-template-columns:auto 1fr;min-height:78px}
+  .burger,.testata-tel{display:none}
+  .marca{justify-self:start;grid-row:1}
+  .nav{display:flex;align-items:center;justify-content:flex-end;gap:26px}
+  .nav a:not(.btn){text-decoration:none;font-weight:600}
+  .nav a:not(.btn):hover{color:var(--foglia-t);text-decoration:underline;text-underline-offset:5px}
+  .nav .btn{min-height:46px;padding:8px 18px}
+  h1{font-size:3.25rem}
+  .hero{padding-top:56px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:end}
+  .foto-vuota,.foto-vuota:first-child{aspect-ratio:4/3}
+  .hero .testo{padding-bottom:64px}
+  .illustrazione{margin:0}
+  section{padding:88px 0}
+  .servizi{grid-template-columns:repeat(3,1fr)}
+  .passi{grid-template-columns:repeat(3,1fr);gap:28px}
+  .passi li{grid-template-columns:1fr;border-top:0;padding:0}
+  .zona{grid-template-columns:1fr 1fr;gap:56px}
+  .scheda{grid-template-columns:1.2fr 1fr}
+  .piede .wrap{grid-template-columns:1fr 1fr;align-items:end}
+  .piede .legale{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.3z"/><path d="M9 8.6c0 3.4 2.9 6.4 6.4 6.4l1.1-1.6-2-1-1 .8a4.6 4.6 0 0 1-2.7-2.7l.8-1-1-2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-orologio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-freccia" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-foto" viewBox="0 0 24 24"><path d="M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+  <symbol id="i-foglia" viewBox="0 0 26 24"><path d="M3 22C2 12 8 3 25 2c1 13-7 20-18 18 3-5 7-8 11-11-5 2-9 6-12 11z" fill="#689B4D" stroke="none"/></symbol>
+</svg>
+
+<header class="testata"><div class="wrap">
+  <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="pannello-nav"><svg class="ico"><use href="#i-menu"/></svg></button>
+  <a class="marca" href="#" aria-label="L'Arte del Verde, Bartolo e Gennaro, torna su">
+    <span class="r1">L'Arte <svg viewBox="0 0 26 24"><use href="#i-foglia"/></svg></span><span class="r2">del Verde</span><small>Bartolo e Gennaro</small>
+  </a>
+  <nav class="nav" aria-label="Principale">
+    <a href="#servizi">Servizi</a><a href="#come">Come lavoriamo</a><a href="#zona">Dove siamo</a><a href="#contatti">Contatti</a>
+    <a class="btn btn-chiama" href="tel:+393288661426"><svg class="ico"><use href="#i-tel"/></svg>328 866 1426</a>
+  </nav>
+  <a class="testata-tel" href="tel:+393288661426" aria-label="Chiama il 328 866 1426"><svg class="ico"><use href="#i-tel"/></svg></a>
+</div></header>
+<div class="pannello-nav" id="pannello-nav" hidden>
+  <button class="burger chiudi" type="button" aria-label="Chiudi il menu"><svg class="ico"><use href="#i-x"/></svg></button>
+  <nav aria-label="Menu mobile">
+    <a href="#servizi">Servizi</a><a href="#come">Come lavoriamo</a><a href="#lavori">I lavori</a><a href="#zona">Dove siamo</a><a href="#contatti">Contatti</a>
+    <a class="btn btn-chiama" href="tel:+393288661426"><svg class="ico"><use href="#i-tel"/></svg>Chiama 328 866 1426</a>
+    <a class="btn btn-wa" href="https://wa.me/393288661426"><svg class="ico"><use href="#i-wa"/></svg>Scrivi su WhatsApp</a>
+  </nav>
+</div>
+<script>(function(){var p=document.getElementById("pannello-nav"),b=document.querySelector(".burger");function s(o){p.hidden=!o;b.setAttribute("aria-expanded",o);document.body.classList.toggle("nav-aperta",o)}b.addEventListener("click",function(){s(true)});p.addEventListener("click",function(e){if(e.target.closest(".chiudi")||e.target.closest("a"))s(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape")s(false)})})()</script>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div class="testo">
+    <p class="occhiello">Giardiniere ad Avella (AV)</p>
+    <h1 style="margin-top:14px">Siepi potate, giardini curati, <span>terreni pronti.</span></h1>
+    <p class="lead">Bartolo e Gennaro si occupano di potatura delle siepi, manutenzione del verde e lavorazione dei terreni agricoli, ad Avella e nei paesi vicini.</p>
+    <div class="azioni">
+      <a class="btn btn-chiama" href="tel:+393288661426"><svg class="ico"><use href="#i-tel"/></svg>Chiama 328 866 1426</a>
+      <a class="btn btn-wa" href="https://wa.me/393288661426"><svg class="ico"><use href="#i-wa"/></svg>Scrivi su WhatsApp</a>
+    </div>
+    <p class="info"><span><svg class="ico"><use href="#i-pin"/></svg>Via Giacomo Leopardi 14, Avella</span><span><svg class="ico"><use href="#i-orologio"/></svg>Lun–Ven 8–18 · Sab 8–14</span></p>
+  </div>
+  <figure class="illustrazione" aria-hidden="true" style="margin-bottom:0">
+    <svg viewBox="0 0 560 400" role="presentation">
+      <circle cx="452" cy="92" r="52" fill="#E9C46A" stroke="#1D221F" stroke-width="3"/>
+      <path d="M0 300 C120 286 230 292 330 284 S500 276 560 280 V400 H0z" fill="#6E4A2F"/>
+      <g stroke="#8B6243" stroke-width="7" stroke-linecap="round" fill="none">
+        <path d="M-10 322 C150 310 380 312 570 302"/><path d="M-10 346 C150 334 380 336 570 328"/><path d="M-10 372 C150 360 380 362 570 356"/><path d="M-10 398 C150 388 380 390 570 384"/>
+      </g>
+      <path d="M0 300 C120 286 230 292 330 284 S500 276 560 280" fill="none" stroke="#1D221F" stroke-width="3"/>
+      <path d="M54 296 V174 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 a16.5 18 0 0 1 33 0 V296z" fill="#689B4D" stroke="#1D221F" stroke-width="3" stroke-linejoin="round"/>
+      <g fill="none" stroke="#557F3E" stroke-width="3" stroke-linecap="round"><path d="M64 214 q10-8 20 0M146 206 q10-8 20 0M232 216 q10-8 20 0M314 208 q10-8 20 0M98 250 q10-8 20 0M190 244 q10-8 20 0M280 254 q10-8 20 0"/></g>
+      <g fill="#557F3E">
+        <circle cx="96" cy="196" r="9"/><circle cx="150" cy="226" r="7"/><circle cx="208" cy="190" r="8"/><circle cx="262" cy="236" r="9"/><circle cx="320" cy="198" r="7"/><circle cx="118" cy="262" r="8"/><circle cx="228" cy="266" r="7"/><circle cx="344" cy="258" r="8"/><circle cx="182" cy="160" r="5"/><circle cx="290" cy="166" r="5"/>
+      </g>
+      <g transform="translate(-40 14) rotate(-20 430 190)">
+        <path d="M378 176 L470 182 L470 190 L378 194z" fill="#E6E8E1" stroke="#1D221F" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M378 196 L470 204 L466 212 L378 204z" fill="#CDD1C6" stroke="#1D221F" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="474" cy="196" r="7" fill="#1D221F"/>
+        <rect x="480" y="182" width="74" height="13" rx="6" fill="#C2410C" stroke="#1D221F" stroke-width="3"/>
+        <rect x="480" y="199" width="74" height="13" rx="6" fill="#C2410C" stroke="#1D221F" stroke-width="3"/>
+      </g>
+      <g fill="#689B4D" stroke="#1D221F" stroke-width="2.5">
+        <path d="M402 296 c-4-18 2-30 14-36 4 14-2 28-14 36z"/><path d="M412 298 c6-16 18-22 32-20-4 14-18 22-32 20z"/>
+      </g>
+      <g fill="#689B4D" stroke="#1D221F" stroke-width="2"><path d="M196 130 c6-8 14-9 20-6-5 7-13 9-20 6z"/><path d="M262 118 c8-4 15-2 18 4-8 3-14 2-18-4z"/></g>
+    </svg>
+  </figure>
+</div></div>
+
+<section class="siepe" id="servizi" aria-labelledby="t-servizi"><div class="wrap">
+  <div class="testa-sez">
+    <p class="occhiello">Cosa facciamo</p>
+    <h2 id="t-servizi">Tre lavori, fatti per bene</h2>
+    <p>Dal giardino di casa al terreno da coltivare: diteci cosa c'è da fare e ci pensiamo noi.</p>
+  </div>
+  <ul class="servizi">
+    <li class="cartellino">
+      <span class="disegno"><svg viewBox="0 0 48 48"><rect x="5" y="20" width="30" height="20" rx="4"/><path d="M5 26h30M12 20v-3M22 20v-4M30 20v-3"/><path d="M30 14l13-7M32 18l13-3"/><circle cx="29" cy="16" r="2.4"/></svg></span>
+      <h3>Potatura siepi</h3>
+      <p>Siepi di giardino e di confine riportate in forma: altezza, lati e spigoli in ordine.</p>
+      <a href="https://wa.me/393288661426?text=Buongiorno%2C%20vorrei%20informazioni%20per%20la%20potatura%20delle%20siepi.">Chiedi per le siepi <svg class="ico"><use href="#i-freccia"/></svg></a>
+    </li>
+    <li class="cartellino">
+      <span class="disegno"><svg viewBox="0 0 48 48"><path d="M4 40h40"/><path d="M8 40c0-6 2-9 2-9M14 40c0-5 1-8 1-8M34 40c0-5 2-8 2-8M40 40c0-6-1-9-1-9"/><path d="M24 40V22"/><path d="M24 26c-9 0-12-7-12-12 8 0 12 5 12 12zM24 22c0-8 4-13 12-13 0 6-4 13-12 13z"/></svg></span>
+      <h3>Manutenzione del verde</h3>
+      <p>Cura di giardini e aree verdi, con un intervento singolo o con lavori a cadenza regolare, da concordare.</p>
+      <a href="https://wa.me/393288661426?text=Buongiorno%2C%20vorrei%20informazioni%20per%20la%20manutenzione%20del%20giardino.">Chiedi per il giardino <svg class="ico"><use href="#i-freccia"/></svg></a>
+    </li>
+    <li class="cartellino">
+      <span class="disegno"><svg viewBox="0 0 48 48"><path d="M3 30c12-3 30-3 42 0M3 37c12-3 30-3 42 0M3 44c12-3 30-3 42 0"/><path d="M33 4l-9 20"/><path d="M20 22l9 4-2 4-9-4z"/></svg></span>
+      <h3>Lavorazione terreni agricoli</h3>
+      <p>Terreni preparati per orti e campi, pronti per la semina o per la messa a dimora.</p>
+      <a href="https://wa.me/393288661426?text=Buongiorno%2C%20vorrei%20informazioni%20per%20la%20lavorazione%20di%20un%20terreno.">Chiedi per il terreno <svg class="ico"><use href="#i-freccia"/></svg></a>
+    </li>
+  </ul>
+</div></section>
+
+<section id="come" aria-labelledby="t-come"><div class="wrap">
+  <div class="testa-sez">
+    <p class="occhiello">Come lavoriamo</p>
+    <h2 id="t-come">Semplice, come una telefonata</h2>
+  </div>
+  <ol class="passi">
+    <li><div><h3>Ci chiamate o ci scrivete</h3><p>Al telefono o su WhatsApp. Se volete, mandateci qualche foto del giardino o del terreno.</p></div></li>
+    <li><div><h3>Ci accordiamo</h3><p>Parliamo di cosa c'è da fare e fissiamo insieme il giorno del lavoro.</p></div></li>
+    <li><div><h3>Facciamo il lavoro</h3><p>Bartolo e Gennaro arrivano con gli attrezzi e si mettono all'opera. Voi vi godete il verde.</p></div></li>
+  </ol>
+</div></section>
+
+<section class="siepe" id="lavori" aria-labelledby="t-lavori"><div class="wrap">
+  <div class="testa-sez">
+    <p class="occhiello">I lavori</p>
+    <h2 id="t-lavori">Prima di chiamare, guardate</h2>
+    <p>Chi cerca un giardiniere vuole vedere come lavorate: qui vanno le foto dei vostri lavori.</p>
+  </div>
+  <div class="lavori">
+    <div class="foto-vuota"><svg class="ico"><use href="#i-foto"/></svg><b>Una siepe appena potata</b><span>Foto del vostro lavoro</span></div>
+    <div class="foto-vuota"><svg class="ico"><use href="#i-foto"/></svg><b>Un giardino curato</b><span>Foto del vostro lavoro</span></div>
+    <div class="foto-vuota"><svg class="ico"><use href="#i-foto"/></svg><b>Un terreno lavorato</b><span>Foto del vostro lavoro</span></div>
+  </div>
+  <p class="nota-foto">Spazio per le vostre foto: bastano quelle fatte col telefono.</p>
+</div></section>
+
+<section id="zona" aria-labelledby="t-zona"><div class="wrap zona">
+  <div>
+    <p class="occhiello">Dove siamo</p>
+    <h2 id="t-zona" style="margin-top:12px">Ad Avella e nei paesi vicini</h2>
+    <p class="indirizzo">Via Giacomo Leopardi 14<br>83021 Avella (AV)</p>
+    <p style="color:var(--muted);margin-bottom:24px">Lavoriamo in paese e nei dintorni. Non sapete se arriviamo anche da voi? Chiedete: ve lo diciamo subito.</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Bartolo+L%27arte+del+Verde+Via+Giacomo+Leopardi+14+Avella" target="_blank" rel="noopener"><svg class="ico"><use href="#i-pin"/></svg>Apri in Google Maps</a>
+  </div>
+  <div class="mappa" aria-hidden="true">
+    <svg viewBox="0 0 480 340">
+      <path d="M0 250 C90 220 140 260 220 230 S360 170 480 196 V340 H0z" fill="#DDE6CF"/>
+      <path d="M0 90 C80 70 120 120 200 96 S340 40 480 70 V0 H0z" fill="#D2DEC0"/>
+      <g fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"><path d="M-10 186 C120 176 220 150 300 168 S420 196 500 172"/><path d="M196 -10 C206 90 236 160 226 350"/><path d="M300 168 C330 220 360 260 420 350"/></g>
+      <g fill="none" stroke="#C3CBB8" stroke-width="4" stroke-linecap="round"><path d="M40 300 C120 280 140 320 210 296"/><path d="M300 60 C340 90 400 92 470 120"/><path d="M90 40 C110 90 80 120 60 150"/></g>
+      <g transform="translate(222 102)">
+        <path d="M0 64 C0 64 -34 30 -34 0 a34 34 0 0 1 68 0 c0 30-34 64-34 64z" fill="#C2410C" stroke="#1D221F" stroke-width="3"/>
+        <circle cx="0" cy="-2" r="12" fill="#fff" stroke="#1D221F" stroke-width="3"/>
+      </g>
+      <g transform="translate(150 196)">
+        <rect x="0" y="0" width="150" height="40" rx="8" fill="#fff" stroke="#1D221F" stroke-width="3"/>
+        <text x="75" y="27" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="18" fill="#1D221F" style="font-stretch:125%">AVELLA</text>
+      </g>
+    </svg>
+  </div>
+</div></section>
+
+<section class="contatti" id="contatti" aria-labelledby="t-contatti"><div class="wrap">
+  <div class="testa-sez">
+    <p class="occhiello">Contatti</p>
+    <h2 id="t-contatti">Chiamate o scrivete</h2>
+    <p>Rispondono direttamente Bartolo e Gennaro.</p>
+  </div>
+  <div class="scheda">
+    <div class="blocco">
+      <h3>Telefono e WhatsApp</h3>
+      <a class="numero" href="tel:+393288661426">328 866 1426</a>
+      <div class="azioni">
+        <a class="btn btn-chiama" href="tel:+393288661426"><svg class="ico"><use href="#i-tel"/></svg>Chiama</a>
+        <a class="btn btn-wa" href="https://wa.me/393288661426"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+      <p class="secondario">Altro numero: <a href="tel:+393792427910">379 242 7910</a></p>
+    </div>
+    <div class="blocco">
+      <h3>Orari</h3>
+      <table class="orari">
+        <tr><td>Lunedì – Venerdì</td><td>8:00 – 18:00</td></tr>
+        <tr><td>Sabato</td><td>8:00 – 14:00</td></tr>
+      </table>
+      <p class="orari-nota">Via Giacomo Leopardi 14, 83021 Avella (AV)</p>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="piede"><div class="wrap">
+  <div>
+    <span class="marca"><span class="r1">L'Arte <svg viewBox="0 0 26 24" aria-hidden="true"><use href="#i-foglia"/></svg></span><span class="r2">del Verde</span><small>Bartolo e Gennaro</small></span>
+  </div>
+  <p>Potatura siepi · Manutenzione del verde · Lavorazione terreni agricoli<br>Via Giacomo Leopardi 14, 83021 Avella (AV) · <a href="tel:+393288661426">328 866 1426</a></p>
+  <p class="legale">© 2026 Bartolo e Gennaro – L'Arte del Verde · P.IVA <mark class="dc">[da inserire]</mark> · Nessun cookie di profilazione.</p>
+</div></footer>
+</body>
+</html>
